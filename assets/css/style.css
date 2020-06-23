@@ -1,0 +1,334 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, li, blockquote{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f1f4f5;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+header {
+    background: #222;
+    padding: 25px 0;
+}
+
+
+.container-full {
+    width: 1250px;
+    margin: 0 auto
+}
+
+.menu{
+    display: block;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a{
+    color:#fff;
+    text-transform: uppercase;
+    position: relative;
+    font-size: .90rem;
+}
+
+.menu li:nth-child(1) a::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: -14px;
+    top: 5px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.menu li:nth-child(3) a, .form .card a {
+    background: #dd4451;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.menu li:nth-child(3):hover, .form .card a:hover, .why .btn-footer:hover {
+    filter: brightness(.85);
+    cursor: pointer;
+}
+
+.menu li a.icon {
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    color: #000;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION TIME */
+
+section.time {
+    height: 600px;
+    background-image: url(../img/banner01.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.time .container {
+    height: 600px;
+}
+
+.time h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.time h2 {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase
+}
+
+.time .info a {
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    border: 2px solid #edae00;
+    padding: 7px 10px;
+    border-radius: 25px;
+    margin-top:15px;
+}
+
+.time .info p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.time .info p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: #93e9e9;
+    border-radius: 3px;
+}
+
+.time .form {
+    width: 30%;
+}
+
+.time .card {
+    border: 0;
+    background: rgba(255, 255, 255, .8);
+}
+
+.time .card-header {
+    background: #dbac28;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: calc(.25rem - 1px);
+    border: none;
+}
+
+.form .card a {
+    font-size: .9rem;
+}
+
+.work {
+
+}
+
+.work img.renda {
+    width: 40%;
+}
+
+.work img.accept {
+    width: 250px;
+}
+
+.work h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-left: 50px;
+    line-height: 20px;
+}
+
+.work p {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.how .como-funciona {
+    width: 100%;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+}
+
+.how .como-funciona::after, .how .como-funciona::before {
+    content: '';
+    position: absolute;
+    background: url(../img/art.png);
+    width: 373px;
+    height: 23px;
+    top: calc(50% - 12px);
+}
+
+.how .como-funciona::after {
+    right: 0;
+} 
+
+.how .como-funciona::before {
+    left: 0;
+}
+
+.slide-how {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slide-how li {
+    display: flex;
+    max-width: 230px;
+    min-width: 190px;
+    display: block;
+    text-align: center;
+    background: #fff;
+    min-height: 300px;
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border:1px solid #bababa;
+}
+
+.slide-how li .icon-area {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.btn-warning {
+    padding: 6px 10px;
+    display: block;
+    background: #edae00;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+    width: 220px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.btn-warning:hover {
+    color: #fff;
+}
+
+.why > .container > .d-flex{
+    min-height: 570px;
+}
+
+.why .vantagens h3{
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.why .facilites p {
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.why .facilites p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px ;
+    width: 6px;
+    height: 100%;
+    background: #dd4451;
+    border-radius: 3px;
+}
+.content-vantagens {
+    background-image: url(../img/img-3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.area-info {
+    width: 100%;
+    bottom: 20px;
+    background: rgba(0,0,0,.8);
+    height: 270px;
+    border-radius: 8px;
+}
+
+.icon-vant{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    background-image: url(../img/sprite.png);
+    background-size: 180px;
+}
+
+.why .btn-footer {
+    color: #fff;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #dd4451;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: .3s;
+    width: 33%;
+    font-size: .85rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.oculosterapia {
+    background: url(../img/bg-1.png) no-repeat;
+    background-size: 100%;
+    height: 500px;
+}
